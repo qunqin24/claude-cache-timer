@@ -1,0 +1,19 @@
+{
+  "name": "cache-timer",
+  "version": "0.1.0",
+  "description": "Shows how long the conversation's prompt cache stays warm, as a live countdown in the status line",
+  "author": { "name": "qunqin24" },
+  "homepage": "https://github.com/qunqin24/claude-cache-timer",
+  "repository": "https://github.com/qunqin24/claude-cache-timer",
+  "license": "MIT",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "ttl": {
+      "type": "string",
+      "title": "Prompt cache TTL",
+      "description": "How long a cache entry lives after the last request that read or wrote it",
+      "default": "1h",
+      "options": ["1h", "5m"]
+    }
+  }
+}
